@@ -1,4 +1,4 @@
-title: "Website Benchmark"
+title: 'Website Benchmark'
 config_path_base: ../../..
 path_to_app: .
 additional_config:
@@ -7,14 +7,8 @@ default_command: help
 commands:
   measure:
     help: 'Run the benchmark measurements and collect data'
-    aliases: ['ms']
-    options:
-      base_url:
-        help: Use a different base_url than in the configuration file.  Useful for measuring redirects against no redirected base URLs.
-        type: string
-      note:
-        help: Add a note to the results about why/what you're measuring, e.g. "before php-fpm".
-        type: string
+    aliases: [ms]
+    options: { base_url: { help: 'Use a different base_url than in the configuration file.  Useful for measuring redirects against no redirected base URLs.', type: string }, note: { help: 'Add a note to the results about why/what you''re measuring, e.g. "before php-fpm".', type: string } }
   init:
     help: 'Initialize local configuration files.'
   help:
@@ -30,5 +24,5 @@ translate:
     en: null
 name: 'Website Benchmark'
 description: 'Generate quick reports based on page-load times for your website.'
-version: 0.0.1
+version: 0.0.2
 author: 'Aaron Klump <sourcecode@intheloftstudios.com>'
