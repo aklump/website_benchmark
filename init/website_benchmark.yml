@@ -1,0 +1,18 @@
+# The base URL of your website, be sure to include the protocol and think about
+# redirects, for example if you redirect based on missing www to add the www,
+# you will want to use the final domain here to avoid redirects.
+base_url: https://www.intheloftstudios.com
+
+# A list of relative paths to measure at base_url.  You should choose the key or
+# important paths the can reveal where you might have performance issues or
+# gains.
+pages:
+  - /
+  - /blog
+
+# How many times should we hit each URL.  The recommended/default value is 5.
+runs_per_page: 5
+
+# An existing directory relative to your app where results JSON should be saved.
+#  Each file will be timestamped.
+results_dir: benchmarks/

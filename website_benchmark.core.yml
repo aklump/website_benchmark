@@ -1,0 +1,34 @@
+title: "Website Benchmark"
+config_path_base: ../../..
+path_to_app: .
+additional_config:
+  - ../../../bin/config/website_benchmark.yml
+default_command: help
+commands:
+  measure:
+    help: 'Run the benchmark measurements and collect data'
+    aliases: ['ms']
+    options:
+      base_url:
+        help: Use a different base_url than in the configuration file.  Useful for measuring redirects against no redirected base URLs.
+        type: string
+      note:
+        help: Add a note to the results about why/what you're measuring, e.g. "before php-fpm".
+        type: string
+  init:
+    help: 'Initialize local configuration files.'
+  help:
+    help: 'Show this help screen.'
+  clear-cache:
+    aliases: [clearcache, cc]
+    help: 'Clear all cached data.'
+translate:
+  ids:
+    - 'Completed successfully.'
+    - Failed.
+  strings:
+    en: null
+name: 'Website Benchmark'
+description: 'Generate quick reports based on page-load times for your website.'
+version: 0.0.1
+author: 'Aaron Klump <sourcecode@intheloftstudios.com>'

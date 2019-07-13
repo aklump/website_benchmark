@@ -1,0 +1,5 @@
+name: aklump/website_benchmark
+clone_from: https://github.com/aklump/website_benchmark
+entry_script: website_benchmark.sh
+entry_symlink: website_benchmark
+on_install: init
