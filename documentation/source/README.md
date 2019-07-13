@@ -1,6 +1,6 @@
 # Website Benchmark
 
-![website_benchmark](images/{{ __i-instance }}.jpg)
+![website_benchmark](images/website-benchmark.jpg)
 
 ## Summary
 
