@@ -4,7 +4,7 @@
 
 ## Summary
 
-Generate quick reports based on page-load times for your website.
+Generate benchmark reports based on page-load times for your website.
 
 **Visit <https://aklump.github.io/website_benchmark> for full documentation.**
 
