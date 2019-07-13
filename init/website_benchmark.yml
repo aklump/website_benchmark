@@ -10,7 +10,11 @@ pages:
   - /
   - /blog
 
-# How many times should we hit each URL.  The recommended/default value is 5.
+# How many times should we hit each URL.  The recommended/default value is 5. If
+# this is at least 3 then the minimum and maximum values are removed before
+# calculating the average, this takes into account warming the cache on the url
+# and should get a more accurate value.  Set to 5 the average is actually an
+# average of three values.
 runs_per_page: 5
 
 # An existing directory relative to your app where results JSON should be saved.
