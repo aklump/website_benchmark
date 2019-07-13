@@ -12,6 +12,9 @@ Generate quick reports based on page-load times for your website.
 
 - Install in your repository root using `cloudy pm-install aklump/website_benchmark`
 - Open _bin/config/website_benchmark.yml_ and modify as needed.
+- Measure your site using `./bin/website_benchmark measure --note="Before upgrade to PHP 7"`
+- You will see your results printed as JSON to the console.
+- Results are also saved to `results_dir`, if that's been set and created.
 
 ## Requirements
 
@@ -41,7 +44,7 @@ The installation script above will generate the following structure where `.` is
 
 | Filename | Description | VCS |
 |----------|----------|---|
-| _website_benchmark.yml_ | Configuration shared across all server environments: prod, staging, dev  | yes |
+| _website_benchmark.yml_ | Configuration for the script.  | yes |
 
 ### Custom Configuration
 

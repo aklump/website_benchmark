@@ -38,6 +38,9 @@
 <ul>
 <li>Install in your repository root using <code>cloudy pm-install aklump/website_benchmark</code></li>
 <li>Open <em>bin/config/website_benchmark.yml</em> and modify as needed.</li>
+<li>Measure your site using <code>./bin/website_benchmark measure --note="Before upgrade to PHP 7"</code></li>
+<li>You will see your results printed as JSON to the console.</li>
+<li>Results are also saved to <code>results_dir</code>, if that's been set and created.</li>
 </ul>
 
 <h2>Requirements</h2>
@@ -79,7 +82,7 @@
 <tbody>
 <tr>
   <td><em>website_benchmark.yml</em></td>
-  <td>Configuration shared across all server environments: prod, staging, dev</td>
+  <td>Configuration for the script.</td>
   <td>yes</td>
 </tr>
 </tbody>
@@ -110,7 +113,7 @@
 <footer>
   <div class="pager"><a href="CHANGELOG.html" class="prev CHANGELOG">&laquo;Changelog</a><a href="index.html" class="index pager__book-title"></a><a href="index.html" class="next index">Index&raquo;</a></div>  
   <div id="footer-legaleeze">
-    <p class="legaleeze center">Version: 0.0.2 &bull; Last Updated: Sat, 13 Jul 2019 13:33:12 -0700</p>
+    <p class="legaleeze center">Version: 0.0.3 &bull; Last Updated: Sat, 13 Jul 2019 13:46:41 -0700</p>
   </div>
 </footer>
 
