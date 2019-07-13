@@ -42,6 +42,8 @@ The installation script above will generate the following structure where `.` is
 
 ## Configuration Files
 
+Refer to the files for documentation about configuration options.
+
 | Filename | Description | VCS |
 |----------|----------|---|
 | _website_benchmark.yml_ | Configuration for the script.  | yes |
