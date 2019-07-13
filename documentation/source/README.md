@@ -46,11 +46,6 @@ The installation script above will generate the following structure where `.` is
 |----------|----------|---|
 | _website_benchmark.yml_ | Configuration for the script.  | yes |
 
-### Custom Configuration
-
-* lorem
-* ipsum
-
 ## Usage
 
 * To see all commands use `./bin/website_benchmark`
