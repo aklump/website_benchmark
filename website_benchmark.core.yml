@@ -2,7 +2,7 @@ title: 'Website Benchmark'
 config_path_base: ../../..
 path_to_app: .
 additional_config:
-  - bin/config/website_benchmark*.yml
+  - 'bin/config/website_benchmark*.yml'
 default_command: help
 commands:
   measure:
@@ -13,10 +13,7 @@ commands:
     help: 'Initialize local configuration files.'
   help:
     help: 'Show this help screen.'
-    options:
-      version:
-        help: "Display the current version"
-        type: boolean
+    options: { version: { help: 'Display the current version', type: boolean } }
   clear-cache:
     aliases: [clearcache, cc]
     help: 'Clear all cached data.'
@@ -28,5 +25,5 @@ translate:
     en: null
 name: 'Website Benchmark'
 description: 'Generate quick reports based on page-load times for your website.'
-version: 0.0.4
+version: 0.0.5
 author: 'Aaron Klump <sourcecode@intheloftstudios.com>'
